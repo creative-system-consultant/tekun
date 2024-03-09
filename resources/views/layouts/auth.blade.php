@@ -1,7 +1,7 @@
 @extends('layouts.base')
 
 @section('body')
-    <div class="flex flex-col justify-center min-h-screen py-12 bg-gray-50 sm:px-6 lg:px-8">
+    <div class="relative flex flex-col justify-center w-full h-screen bg-no-repeat bg-cover" style="background-image:url('{{ asset('image/login.png') }}')">
         @yield('content')
 
         @isset($slot)

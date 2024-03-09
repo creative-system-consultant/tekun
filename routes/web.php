@@ -8,6 +8,12 @@ use App\Livewire\Auth\Passwords\Email;
 use App\Livewire\Auth\Passwords\Reset;
 use App\Livewire\Auth\Register;
 use App\Livewire\Auth\Verify;
+use App\Livewire\Home;
+use App\Livewire\Module\Admin;
+use App\Livewire\Module\Firasat;
+use App\Livewire\Module\Laporan;
+use App\Livewire\Module\Produk;
+use App\Livewire\Module\Teller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,7 +40,7 @@ Route::get('password/reset', Email::class)->name('password.request');
 Route::get('password/reset/{token}', Reset::class)->name('password.reset');
 
 Route::middleware('auth')->group(function () {
-    Route::view('/', 'welcome')->name('home');
+    Route::get('/', Home::class)->name('home');
 
     Route::get('email/verify', Verify::class)
         ->middleware('throttle:6,1')
@@ -42,13 +48,26 @@ Route::middleware('auth')->group(function () {
 
     Route::get('password/confirm', Confirm::class)
         ->name('password.confirm');
-});
 
-Route::middleware('auth')->group(function () {
     Route::get('email/verify/{id}/{hash}', EmailVerificationController::class)
         ->middleware('signed')
         ->name('verification.verify');
 
     Route::post('logout', LogoutController::class)
         ->name('logout');
+
+    Route::get('/firasat', Firasat::class)->name('firasat');
+
+    Route::get('/teller', Teller::class)->name('teller');
+
+    Route::prefix('cif')->as('cif.')->group(
+        base_path('routes/web/cif.php'),
+    );
+
+    Route::get('/admin', Admin::class)->name('admin');
+
+    Route::get('/produk', Produk::class)->name('produk');
+
+    Route::get('/laporan', Laporan::class)->name('laporan');
+
 });

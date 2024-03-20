@@ -31,7 +31,7 @@
 
     </head>
 
-    <body class="h-full" x-data="{ isSidebarOpen: false }">
+    <body class="h-full overflow-hidden" x-data="{ isSidebarOpen: false }">
         @yield('body')
     </body>
 </html>

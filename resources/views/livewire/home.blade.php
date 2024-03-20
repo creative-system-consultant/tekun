@@ -1,13 +1,13 @@
-<div class="flex flex-col h-[80vh] space-y-6 overflow-hidden">
-    <div class="flex flex-col space-y-4 h-[40%]">
-        <div class="grid grid-cols-3 gap-4 h-full">
+<div class="space-y-6 ">
+    <div class="flex flex-col space-y-4 ">
+        <div class="grid h-full grid-cols-1 xl:grid-cols-3 gap-y-4 xl:gap-4">
             <!-- Stats Section -->
-            <div class="col-span-2 flex">
-                <div class="grid grid-cols-4 gap-4 w-full">
-                    <x-card.stat-card colour="blue" icon="chat" stat="5082" description="Consultation"></x-card.stat-card>
-                    <x-card.stat-card colour="blue" icon="presentation-chart-line" stat="2082" description="In Progress"></x-card.stat-card>
-                    <x-card.stat-card colour="blue" icon="star" stat="1082" description="In Review"></x-card.stat-card>
-                    <x-card.stat-card colour="blue" icon="shield-check" stat="1000" description="Report Done"></x-card.stat-card>
+            <div class="flex col-span-2">
+                <div class="grid w-full grid-cols-2 gap-4 lg:grid-cols-4">
+                    <x-card.stat-card bgColour="bg-blue-600" iconColor="text-blue-600" icon="chat" stat="5082" description="Consultation" />
+                    <x-card.stat-card bgColour="bg-blue-600" iconColor="text-blue-600" icon="presentation-chart-line" stat="2082" description="In Progress" />
+                    <x-card.stat-card bgColour="bg-blue-600" iconColor="text-blue-600" icon="star" stat="1082" description="In Review" />
+                    <x-card.stat-card bgColour="bg-blue-600" iconColor="text-blue-600" icon="shield-check" stat="1000" description="Report Done" />
                 </div>
             </div>
             <!-- Bar Chart Section -->
@@ -20,24 +20,25 @@
             </div>
         </div>
     </div>
-    <div class="flex flex-col space-y-4 h-[60%]">
-        <div class="grid grid-cols-3 gap-4 h-full">
+    <div class="flex flex-col space-y-4">
+        <div class="grid h-full grid-cols-1 xl:grid-cols-3 gap-y-4 xl:gap-4">
             <!-- Stats Section -->
-            <div class="col-span-2 flex">
+            <div class="flex col-span-2">
                 <x-card class="w-full h-full">
-                    <div class="p-3">
+                    <div class="p-3  h-[20rem]">
                         <x-chart :chart-id="'linechart'" type="line" :chartData="$barchartData" :options="['scales' => ['y' => ['beginAtZero' => true]]]" />
                     </div>
                 </x-card>
             </div>
             <!-- Bar Chart Section -->
             <div class="flex w-full">
-                <x-card class="w-full">
-                    <div class="p-3">
+                <x-card class="w-full h-full">
+                    <div class="p-3 h-[20rem]">
                         <x-chart :chart-id="'piechart'" type="pie" :chartData="$barchartData" :options="['scales' => ['y' => ['beginAtZero' => true]]]" />
                     </div>
                 </x-card>
             </div>
         </div>
+           
     </div>
 </div>

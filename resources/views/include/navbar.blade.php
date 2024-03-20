@@ -1,15 +1,15 @@
-<div class="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 border-b border-gray-200 bg-white px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8" x-data="{ openMenu: false }">
+<div class="z-40 flex items-center h-16 px-4 bg-white border-b border-gray-200 shadow-sm shrink-0 gap-x-4 sm:gap-x-6 sm:px-6 lg:px-8" x-data="{ openMenu: false }">
     <button type="button" class="-m-2.5 p-2.5 text-gray-400 lg:hidden" @click="open = true">
         <span class="sr-only">Open sidebar</span>
         <x-icon name="menu" class="w-6 h-6" />
     </button>
 
     <!-- Separator -->
-    <div class="h-6 w-px bg-gray-900/10 lg:hidden" aria-hidden="true"></div>
+    <div class="w-px h-6 bg-gray-900/10 lg:hidden" aria-hidden="true"></div>
 
-    <div class="flex flex-1 gap-x-4 self-stretch lg:gap-x-6">
-        <div class="relative flex flex-1 items-center">
-            <H2 class=" font-semibold text-gray-500  text-lg">SELAMAT DATANG KE SISTEM PENGURUSAN PEMBIAYAAN</H2>
+    <div class="flex self-stretch flex-1 gap-x-4 lg:gap-x-6">
+        <div class="relative flex items-center flex-1">
+            <H2 class="text-lg font-semibold text-gray-500 ">SELAMAT DATANG KE SISTEM PENGURUSAN PEMBIAYAAN</H2>
         </div>
         <div class="flex items-center gap-x-4 lg:gap-x-6">
             <button type="button" class="-m-2.5 p-2.5 text-gray-400 hover:text-gray-500">
@@ -23,10 +23,10 @@
             <div class="relative">
                 <button type="button" @click="openMenu = !openMenu" class="-m-1.5 flex items-center p-1.5" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                     <span class="sr-only">Open user menu</span>
-                    <img class="h-8 w-8 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                    <img class="w-8 h-8 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
                     <span class="hidden lg:flex lg:items-center">
                         <span class="ml-4 text-sm font-semibold leading-6 text-gray-500" aria-hidden="true">{{ strtoupper(auth()->user()->name) }}</span>
-                        <div class="ml-2 h-5 w-5 text-gray-400 transition-transform duration-500" :class="{'rotate-180': openMenu, 'rotate-0': !openMenu}">
+                        <div class="w-5 h-5 ml-2 text-gray-400 transition-transform duration-500" :class="{'rotate-180': openMenu, 'rotate-0': !openMenu}">
                             <x-icon name="chevron-down" class="w-6 h-6" />
                         </div>
                     </span>

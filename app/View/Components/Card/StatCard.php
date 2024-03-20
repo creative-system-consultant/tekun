@@ -8,14 +8,16 @@ use Illuminate\View\Component;
 
 class StatCard extends Component
 {
-    public $colour;
+    public $bgColour;
+    public $iconColor;
     public $icon;
     public $stat;
     public $description;
 
-    public function __construct($colour, $icon, $stat, $description)
+    public function __construct($bgColour,$iconColor, $icon, $stat, $description)
     {
-        $this->colour = $colour;
+        $this->bgColour = $bgColour;
+        $this->iconColor = $iconColor;
         $this->icon = $icon;
         $this->stat = $stat;
         $this->description = $description;

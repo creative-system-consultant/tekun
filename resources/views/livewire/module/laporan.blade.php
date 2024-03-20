@@ -1,3 +1,8 @@
 <div>
-    {{-- The Master doesn't talk, he acts. --}}
+    <x-card>
+        <h2 class="text-lg font-bold ">
+            Datatable Example
+        </h2>
+        <livewire:table.account-master-table/>
+    </x-card>
 </div>

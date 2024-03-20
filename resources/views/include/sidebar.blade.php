@@ -1,10 +1,10 @@
 <!-- Narrow sidebar -->
-<div class="hidden overflow-y-auto bg-gray-900 w-28 md:block">
-    <div class="flex flex-col items-center w-full py-6">
+<div class="z-50 hidden overflow-y-auto bg-gray-900 w-28 md:block">
+    <div class="z-40 flex flex-col items-center w-full py-6">
         <div class="flex items-center flex-shrink-0">
             <x-logo class="w-auto h-16" />
         </div>
-        <div class="flex-1 w-full px-2 mt-6 space-y-1">
+        <div class="flex-1 w-full px-2 mt-6 space-y-1 ">
             <x-sidebar.nav-item routeName="home">
                 <x-slot name="icon">
                     <x-icon name="home" class="w-6 h-6" />
@@ -23,12 +23,12 @@
                 </x-slot>
                 <span class="mt-2">Teller | Resit</span>
             </x-sidebar.nav-item>
-            <x-sidebar.nav-item routeName="">
+            <x-sidebar.nav-item-sub alpineName="opensubcif" routePrefix="cif">
                 <x-slot name="icon">
                     <x-icon name="user-group" class="w-6 h-6" />
                 </x-slot>
                 <span class="mt-2">CIF</span>
-            </x-sidebar.nav-item>
+            </x-sidebar.nav-item-sub>
             <x-sidebar.nav-item routeName="admin">
                 <x-slot name="icon">
                     <x-icon name="lock-closed" class="w-6 h-6" />
@@ -56,6 +56,36 @@
         </div>
     </div>
 </div>
+
+<!-- submenu slide over -->
+<x-sidebar.sub-sidebar alpineName="opensubcif" title="CIF MENU" >
+    <x-sidebar.sub-sidebar-nav-item routeName="cif.senarai-ctos" title="Senarai CTOS" />
+    <x-sidebar.sub-sidebar-nav-item routeName="" title="Account Maintenance" />
+    <x-sidebar.sub-sidebar-nav-item routeName="" title="Produk CBRM" />
+    <x-sidebar.sub-sidebar-nav-item routeName="" title="Produk TBRS" />
+    <x-sidebar.sub-sidebar-nav-item routeName="" title="CBRM 2.0 | SPIN 2.0 | SPIM" />
+    <x-sidebar.sub-sidebar-nav-item routeName="" title="E-Mandate" />
+    <x-sidebar.sub-sidebar-nav-item routeName="" title="Takaful | Perkeso" />
+    <x-sidebar.sub-sidebar-nav-item routeName="" title="PMGi" />
+    <x-sidebar.sub-sidebar-nav-item routeName="" title="Akaun Perhebat" />
+    <x-sidebar.sub-sidebar-nav-item routeName="" title="Pelarasan Pukal" />
+    <x-sidebar.sub-sidebar-nav-item routeName="" title="Senarai Kutipan PSAT" />
+    <x-sidebar.sub-sidebar-nav-item routeName="" title="Moratorium Sakit Kronik / Bencana" />
+    <x-sidebar.sub-sidebar-nav-item routeName="" title="PS Version 2.0" />
+    <x-sidebar.sub-sidebar-nav-item routeName="" title="Usahawan Banjir" />
+    <x-sidebar.sub-sidebar-nav-item routeName="" title="Lebihan Bayaran" />
+    <x-sidebar.sub-sidebar-nav-item routeName="" title="Carian Cek" />
+    <x-sidebar.sub-sidebar-nav-item routeName="" title="Tagging Selian PT" />
+    <x-sidebar.sub-sidebar-nav-item routeName="" title="Upload Surat Perjanjian" />
+    <x-sidebar.sub-sidebar-nav-item routeName="" title="JPP" />
+    <x-sidebar.sub-sidebar-nav-item routeName="" title="Pengeluaran Simpanan" />
+    <x-sidebar.sub-sidebar-nav-item routeName="" title="FMS Reconciliation" />
+    <x-sidebar.sub-sidebar-nav-item routeName="" title="Carian Peminjam" />
+    <x-sidebar.sub-sidebar-nav-item routeName="" title="Permohonan Lulus" />
+    <x-sidebar.sub-sidebar-nav-item routeName="" title="Tukar Kata Laluan" />
+    <x-sidebar.sub-sidebar-nav-item routeName="" title="Penjadualan Semula" />
+    <x-sidebar.sub-sidebar-nav-item routeName="" title="Penangguhan Teman 2.0" />
+</x-sidebar.sub-sidebar>
 
 <!-- Mobile menu -->
 <div x-cloak x-show="open" class="relative z-20 md:hidden" role="dialog" aria-modal="true"x-description="Off-canvas menu for mobile, show/hide based on off-canvas menu state." x-ref="dialog" >
@@ -85,43 +115,43 @@
                         </x-sidebar.nav-item>
                         <x-sidebar.nav-item routeName="firasat">
                             <x-slot name="icon">
-                                <x-icon name="book-open" class="w-6 h-6" />
+                                <x-icon name="book-open" class="w-6 h-6 mr-3 text-indigo-300 group-hover:text-white" />
                             </x-slot>
                             <span>Firasat</span>
                         </x-sidebar.nav-item>
                         <x-sidebar.nav-item routeName="teller">
                             <x-slot name="icon">
-                                <x-icon name="receipt-refund" class="w-6 h-6" />
+                                <x-icon name="receipt-refund" class="w-6 h-6 mr-3 text-indigo-300 group-hover:text-white" />
                             </x-slot>
                             <span>Teller | Resit</span>
                         </x-sidebar.nav-item>
                         <x-sidebar.nav-item routeName="">
                             <x-slot name="icon">
-                                <x-icon name="user-group" class="w-6 h-6" />
+                                <x-icon name="user-group" class="w-6 h-6 mr-3 text-indigo-300 group-hover:text-white" />
                             </x-slot>
                             <span>CIF</span>
                         </x-sidebar.nav-item>
                         <x-sidebar.nav-item routeName="admin">
                             <x-slot name="icon">
-                                <x-icon name="lock-closed" class="w-6 h-6" />
+                                <x-icon name="lock-closed" class="w-6 h-6 mr-3 text-indigo-300 group-hover:text-white" />
                             </x-slot>
                             <span>Admin</span>
                         </x-sidebar.nav-item>
                         <x-sidebar.nav-item routeName="produk">
                             <x-slot name="icon">
-                                <x-icon name="library" class="w-6 h-6" />
+                                <x-icon name="library" class="w-6 h-6 mr-3 text-indigo-300 group-hover:text-white" />
                             </x-slot>
                             <span>Produk</span>
                         </x-sidebar.nav-item>
                         <x-sidebar.nav-item routeName="laporan">
                             <x-slot name="icon">
-                                <x-icon name="document-report" class="w-6 h-6" />
+                                <x-icon name="document-report" class="w-6 h-6 mr-3 text-indigo-300 group-hover:text-white" />
                             </x-slot>
                             <span>Laporan</span>
                         </x-sidebar.nav-item>
                         <x-sidebar.nav-item routeName="">
                             <x-slot name="icon">
-                                <x-icon name="cog" class="w-6 h-6" />
+                                <x-icon name="cog" class="w-6 h-6 mr-3 text-indigo-300 group-hover:text-white" />
                             </x-slot>
                             <span>Tetapan</span>
                         </x-sidebar.nav-item>

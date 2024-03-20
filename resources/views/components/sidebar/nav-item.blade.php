@@ -10,7 +10,7 @@
     </a>
 
     <!-- Mobile Sidebar Menu Item -->
-    <a href="{{ $routeName ? route($routeName) : '#' }}" class="flex items-center px-3 py-2 text-sm font-medium text-indigo-100 rounded-md hover:bg-indigo-800 hover:text-white group md:hidden">
+    <a href="{{ $routeName ? route($routeName) : '#' }}" class="flex items-center px-3 py-2 text-sm font-medium text-indigo-100 rounded-md hover:bg-gray-800 hover:text-white group md:hidden">
         @if($icon)
         {{ $icon }}
         @endif

@@ -1,5 +1,5 @@
 <!-- Narrow sidebar -->
-<div class="z-50 hidden overflow-y-auto bg-gray-900 w-28 md:block">
+<div class="z-50 hidden overflow-hidden bg-gray-900 w-28 md:block">
     <div class="z-40 flex flex-col items-center w-full py-6">
         <div class="flex items-center flex-shrink-0">
             <x-logo class="w-auto h-16" />

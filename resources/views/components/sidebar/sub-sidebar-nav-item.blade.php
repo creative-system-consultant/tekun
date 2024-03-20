@@ -1,5 +1,5 @@
 @props(['routeName' => null, 'title' => null])
 
-<a href="{{ $routeName ? route($routeName) : '#' }}" class="flex items-center px-3 py-2 text-sm font-medium text-indigo-100 rounded-md hover:bg-gray-800 hover:text-white group">
+<a href="{{ $routeName ? route($routeName) : '#' }}" class="mt-1 flex items-center px-3 py-2 text-sm font-medium  rounded-md  group {{ Route::currentRouteName() == $routeName ? 'text-white bg-gray-900' : 'text-gray-400 hover:text-white hover:bg-gray-800' }}">
     <span>{{ $title }}</span>
 </a>

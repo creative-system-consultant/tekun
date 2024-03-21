@@ -45,6 +45,9 @@
             @case(4)
                 <livewire:module.cif.maklumat-peminjam.waris-pasangan />
                 @break
+            @case(5)
+                <livewire:module.cif.maklumat-peminjam.penama />
+                @break
         @endswitch
     </div>
 </div>

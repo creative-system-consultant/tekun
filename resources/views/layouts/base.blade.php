@@ -26,9 +26,18 @@
 
         {{-- Chart.js  --}}
         <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+        {{-- flatpickr.js  --}}
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
         <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
+        {{-- tom-select.js  --}}
+        <link href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/js/tom-select.complete.min.js"></script>
+
+        {{-- slim-select.js  --}}
+        <script src="https://unpkg.com/slim-select@latest/dist/slimselect.min.js"></script>
+        <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet"></link>
     </head>
 
     <body class="h-full overflow-hidden" x-data="{ isSidebarOpen: false }">

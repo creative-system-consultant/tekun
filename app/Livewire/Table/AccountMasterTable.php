@@ -24,8 +24,8 @@ final class AccountMasterTable extends PowerGridComponent
 {
     use WithExport;
 
-    public string $primaryKey = 'account_masters.ACTID';
-    public string $sortField = 'account_masters.ACTID';
+    public string $primaryKey = 'account_master.ACTID';
+    public string $sortField = 'account_master.ACTID';
 
     //Custom per page
     public int $perPage = 10;

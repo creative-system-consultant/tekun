@@ -59,6 +59,7 @@
 
 <!-- submenu slide over -->
 <x-sidebar.sub-sidebar alpineName="opensubcif" title="CIF MENU" >
+    <x-sidebar.sub-sidebar-nav-item routeName="cif.maklumat-peminjam" title="Maklumat Peminjam" />
     <x-sidebar.sub-sidebar-nav-item routeName="cif.senarai-ctos" title="Senarai CTOS" />
     <x-sidebar.sub-sidebar-nav-item routeName="" title="Account Maintenance" />
     <x-sidebar.sub-sidebar-nav-item routeName="" title="Produk CBRM" />

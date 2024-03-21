@@ -42,6 +42,9 @@
             @case(3)
                 <livewire:module.cif.maklumat-peminjam.alamat />
                 @break
+            @case(4)
+                <livewire:module.cif.maklumat-peminjam.waris-pasangan />
+                @break
         @endswitch
     </div>
 </div>

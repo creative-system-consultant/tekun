@@ -51,6 +51,9 @@
             @case(8)
                 <livewire:module.cif.maklumat-peminjam.simpanan />
                 @break
+            @case(9)
+                <livewire:module.cif.maklumat-peminjam.lebihan-bayaran />
+                @break
         @endswitch
     </div>
 </div>

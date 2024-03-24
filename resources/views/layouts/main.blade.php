@@ -5,16 +5,13 @@
     @include('include.sidebar')
 
     <!-- Content area -->
-    <div class="flex flex-col flex-1 overflow-hidden">
+    <div class="flex flex-col flex-1 h-full overflow-hidden">
         @include('include.navbar')
 
         <!-- Main content -->
-        <div class="flex items-stretch flex-1 overflow-hidden">
-            <main class="flex-1 overflow-y-auto">
-                <!-- Primary column -->
-                <div class="px-4 py-6 sm:px-6 lg:px-8">
-                    @yield('content')
-                </div>
+        <div class="flex items-stretch flex-1 h-full overflow-hidden">
+            <main class="flex-1 h-full overflow-y-auto">
+                @yield('content')
             </main>
         </div>
     </div>

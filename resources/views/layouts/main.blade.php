@@ -10,7 +10,7 @@
 
         <!-- Main content -->
         <div class="flex items-stretch flex-1 h-full overflow-hidden">
-            <main class="flex-1 h-full overflow-y-auto">
+            <main class="flex-1 h-full px-4 py-6 overflow-y-auto sm:px-6 lg:px-8">
                 @yield('content')
             </main>
         </div>

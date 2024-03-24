@@ -1,9 +1,9 @@
-<div class="h-full px-4 py-6 sm:px-6 lg:px-8">
-    <div class="grid h-full grid-rows-2 gap-4">
+<div class="h-full">
+    <div class="grid h-full gap-4">
         <div>
-            <div class="grid h-full grid-cols-1 xl:grid-cols-3 gap-y-4 xl:gap-4">
+            <div class="grid grid-cols-1 xl:grid-cols-3 gap-y-4 xl:gap-4">
                 <!-- Stats Section -->
-                <div class="flex col-span-2">
+                <div class="flex col-span-2 ">
                     <div class="grid w-full grid-cols-2 gap-4 lg:grid-cols-4">
                         <x-card.stat-card bgColour="bg-blue-600" iconColor="text-blue-600" icon="chat" stat="5082" description="Consultation" />
                         <x-card.stat-card bgColour="bg-blue-600" iconColor="text-blue-600" icon="presentation-chart-line" stat="2082" description="In Progress" />
@@ -13,7 +13,7 @@
                 </div>
                 <!-- Bar Chart Section -->
                 <div class="flex w-full">
-                    <x-card class="w-full">
+                    <x-card class="w-full h-full">
                         <div class="p-3 ">
                             <x-chart :chart-id="'barChart'" type="bar" :chartData="$barchartData" :options="['scales' => ['y' => ['beginAtZero' => true]]]" />
                         </div>
@@ -26,7 +26,7 @@
                 <!-- Stats Section -->
                 <div class="flex col-span-2">
                     <x-card class="w-full h-full">
-                        <div class="p-3  h-[20rem]">
+                        <div class="h-full p-3">
                             <x-chart :chart-id="'linechart'" type="line" :chartData="$barchartData" :options="['scales' => ['y' => ['beginAtZero' => true]]]" />
                         </div>
                     </x-card>
@@ -34,12 +34,13 @@
                 <!-- Bar Chart Section -->
                 <div class="flex w-full">
                     <x-card class="w-full h-full">
-                        <div class="p-3 h-[20rem]">
+                        <div class="h-full p-3">
                             <x-chart :chart-id="'piechart'" type="pie" :chartData="$barchartData" :options="['scales' => ['y' => ['beginAtZero' => true]]]" />
                         </div>
                     </x-card>
                 </div>
             </div>
         </div>
+           
     </div>
 </div>

@@ -48,6 +48,9 @@
             @case(5)
                 <livewire:module.cif.maklumat-peminjam.penama />
                 @break
+            @case(7)
+                <livewire:module.cif.maklumat-peminjam.akaun />
+                @break
             @case(8)
                 <livewire:module.cif.maklumat-peminjam.simpanan />
                 @break

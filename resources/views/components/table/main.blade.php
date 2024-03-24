@@ -16,9 +16,7 @@
             <div class="overflow-hidden bg-white border border-gray-200 shadow sm:rounded-lg dark:bg-gray-900 dark:border-gray-600 ">
                 <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-600">
                     <thead class="relative">
-                        <tr>
-                            {{ $thead }}
-                        </tr>
+                        {{ $thead }}
                     </thead>
                     <tbody class="bg-white divide-y divide-gray-200 dark:divide-gray-600">
                         {{ $tbody }}

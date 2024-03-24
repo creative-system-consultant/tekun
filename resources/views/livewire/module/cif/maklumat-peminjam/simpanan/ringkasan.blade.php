@@ -3,10 +3,12 @@
         <x-card title="SIMPANAN">
             <x-table.main loading="true" loadingtarget="paginated">
                 <x-slot name="thead">
-                    <x-table.header class="text-left" value="Bil." sort="" />
-                    <x-table.header class="text-left" value="No. Akaun" sort="" />
-                    <x-table.header class="text-left" value="Jumlah Simpanan" sort="" />
-                    <x-table.header class="text-left" value="Baki Simpanan" sort="" />
+                    <tr>
+                        <x-table.header class="text-left" value="Bil." sort="" />
+                        <x-table.header class="text-left" value="No. Akaun" sort="" />
+                        <x-table.header class="text-left" value="Jumlah Simpanan" sort="" />
+                        <x-table.header class="text-left" value="Baki Simpanan" sort="" />
+                    </tr>
                 </x-slot>
                 <x-slot name="tbody">
                     <tr>
@@ -38,12 +40,14 @@
         <x-card title="PENGELUARAN SIMPANAN">
             <x-table.main loading="true" loadingtarget="paginated">
                 <x-slot name="thead">
-                    <x-table.header class="text-left" value="Bil." sort="" />
-                    <x-table.header class="text-left" value="No. Permohonan" sort="" />
-                    <x-table.header class="text-left" value="Amaun (RM)" sort="" />
-                    <x-table.header class="text-left" value="Tarikh" sort="" />
-                    <x-table.header class="text-left" value="Status" sort="" />
-                    <x-table.header class="text-left" value="Diluluskan Oleh" sort="" />
+                    <tr>
+                        <x-table.header class="text-left" value="Bil." sort="" />
+                        <x-table.header class="text-left" value="No. Permohonan" sort="" />
+                        <x-table.header class="text-left" value="Amaun (RM)" sort="" />
+                        <x-table.header class="text-left" value="Tarikh" sort="" />
+                        <x-table.header class="text-left" value="Status" sort="" />
+                        <x-table.header class="text-left" value="Diluluskan Oleh" sort="" />
+                    </tr>
                 </x-slot>
                 <x-slot name="tbody">
                     <tr>

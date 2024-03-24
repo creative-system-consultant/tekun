@@ -1,8 +1,11 @@
 @props([
 'value' => '',
 'sort' => '',
+'colspan' => '',
 ])
-<th {{ $attributes->merge(['class' => 'px-6 py-3 bg-gray-50 text-xs leading-4 font-medium uppercase  dark:bg-gray-900 dark:text-white']) }}>
+
+<th {{ ($colspan != '') ? 'colspan = '.$colspan : '' }}  {{ $attributes->merge(['class' => 'px-6 py-3 bg-gray-50 text-xs leading-4 font-medium uppercase  dark:bg-gray-900 dark:text-white']) }}>
+
     @if ($sort != "")
     <div class="flex cursor-pointer">
         <span class="mr-2">{{ $value }}</span>

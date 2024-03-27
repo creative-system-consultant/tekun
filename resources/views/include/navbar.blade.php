@@ -8,14 +8,14 @@
         </button>
         <div class="flex justify-between w-full px-4 md:px-0">
             <!-- Title Div with Polygon on the Right for desktop -->
-            <div class="flex items-center w-full md:w-2/3 md:pl-8 md:mr-20 md:relative md:bg-gradient-to-r from-red-800 via-red-500 to-pink-500">
+            <div class="flex items-center w-full md:w-2/3 md:pl-8 md:mr-20 md:relative md:bg-gradient-to-r from-red-800 via-red-500 to-pink-500 md:shadow-xl">
                 <H2 class="text-lg font-semibold text-gray-500 md:text-white">SELAMAT DATANG KE SISTEM PENGURUSAN PEMBIAYAAN</H2>
                 <svg class="hidden md:block md:absolute md:right-0 md:h-full md:text-pink-500 md:transform md:translate-x-1/2 md:fill-current" viewBox="0 0 100 100" preserveAspectRatio="none">
                     <polygon points="50,0 100,0 50,100 0,100"></polygon>
                 </svg>
             </div>
             <!-- Icons Div with Polygon on the Left for desktop -->
-            <div class="flex items-center justify-end ml-2 space-x-4 md:w-1/3 md:pr-8 sm:ml-6 sm:space-x-6 md:relative md:ml-10 md:bg-gradient-to-r from-blue-500 via-sky-500 to-sky-800">
+            <div class="flex items-center justify-end ml-2 space-x-4 md:w-1/3 md:pr-8 sm:ml-6 sm:space-x-6 md:relative md:ml-10 md:bg-gradient-to-r from-blue-500 via-sky-500 to-sky-800 md:shadow-xl">
                 <svg class="hidden md:block md:absolute md:left-0 md:h-full md:text-blue-500 md:transform md:-translate-x-1/2 md:fill-current" viewBox="0 0 100 100" preserveAspectRatio="none">
                     <polygon points="50,0 100,0 50,100 0,100"></polygon>
                 </svg>
